@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web API Code Quiz</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src=script.js></script>
+</head>
+<body >
+    <nav> 
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mr-auto">
+                        <!-- link to High Scores -->
+                        <a class="nav-item nav-link active" href="highScore.html">High Scores</a>
+                    </div>
+                </div>
+            </div>
+        </nav> 
+    </nav> 
+    <!-- The main contents of the webpage are stored within this wrapper div. -->
+    <div class="wrapper">                     
+        <div id="quizIntro" class="introDiv">
+            <div class="row justify-content-center">
+                <h3>All-Time High!</h3>
+                <br>
+            </div>
+            <!-- The initials and high scores saved on the local storage continue to populate inside this div until the "Clear Scores" button is clicked. -->
+            <div class="row justify-content-center">
+                <ol id="scoreList"></ol>
+            </div>
+            
+            <div class="row justify-content-center">
+                <!-- This button contains a link to the instruction page. -->
+                <a href="index.html" id="clear" class="button">Go Back</a>
+                <!-- This button clears the scores from the local storage. -->
+                <button id="clear" class="button">Clear Scores</button>
+            </div>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="assets/js/highScore.js"></script>
+</body>
+</html>
